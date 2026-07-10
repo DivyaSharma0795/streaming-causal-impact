@@ -25,3 +25,24 @@ The genre segmentation is central to this analysis because a company can't just 
 
 ## Recommendation
 
+
+
+
+## Data Design Decisions
+    ### Population
+
+-   Total Primeflix subscriber base (implied): ~1,000,000
+-   Horror viewers (treated group, 70%+ horror watch share): 80,000
+-   Thriller viewers (control group, 70%+ thriller watch share): 100,000
+-   Rationale: Horror and Thriller are treated as niche-concentration segments within a much larger, genre-mixed base — most subscribers don't concentrate 70%+ in a single genre. Thriller is sized larger than Horror to reflect its more mainstream appeal.
+
+### Baseline churn rate
+
+-   ~3–4% monthly churn, converted to weekly probability (Acquisition can be assumed to offset baseline churn at the topline business level)
+
+## Timeline
+
+78-week panel (18 months)
+-   Weeks 1–52: pre-launch baseline
+-   Week 53: competitor launches
+-   Weeks 53–78: post-launch measurement window
