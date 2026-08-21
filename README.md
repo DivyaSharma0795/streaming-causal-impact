@@ -49,29 +49,35 @@ Peak vs. Tail Hypothesis Test
     -   Takeaway: The drop from peak shock to settled tail is statistically significant ($p < 0.05$). The competitor launch created an immediate acquisition shock that naturally tapered into a lower, stable long-term equilibrium.
     
 ### Analytical Visualizations
-    1. Weekly Raw Churn Rates Over Time
-        Highlighting the exact moment of launch (Week 53 red line) and peak shock window (Week 60 orange line), illustrating the dynamic rise and partial recovery of the Horror cohort relative to Thriller.
-    ![Raw Churn Over Time](results/Weekly_Churn_Rate.png)
+1. Weekly Raw Churn Rates Over Time
+   
+     - Highlighting the exact moment of launch (Week 53 red line) and peak shock window (Week 60 orange line), illustrating the dynamic rise and partial recovery of the Horror cohort relative to Thriller
+       
+![Raw Churn Over Time](results/Weekly_Churn_Rate.png)
 
-    2. Pre-Post vs. Diff-in-Diff Discontinuity Analysis
-        Left Panel: Simple pre-post jump showing a clear shift upwards in Horror churn post-Week 53
-        Right Panel: Diff-in-Diff view showing the control group (Slate Grey) remaining flat at ~0.80%, confirming that the rise in Horror churn (Crimson Red) was caused by the competitor, not general platform noise.
-    ![Pre-Post and Diff-in-diff](results/diff_in_diff.png)
+2. Pre-Post vs. Diff-in-Diff Discontinuity Analysis
+   
+    - Left Panel: Simple pre-post jump showing a clear shift upwards in Horror churn post-Week 53
+    - Right Panel: Diff-in-Diff view showing the control group (Grey) remaining flat at ~0.80%, confirming that the rise in Horror churn (Red) was caused by the competitor, not general platform noise
+      
+![Pre-Post and Diff-in-diff](results/diff_in_diff.png)
 
-    3. Actual vs. Counterfactual Churn Trajectory
-        Blue Line: Actual pre-launch baseline (~0.80%)
-        Red Line: Actual post-launch churn rate for Horror viewers
-        Dashed Grey Line: Estimated counterfactual trajectory (what Horror churn would have been without the competitor launch, tracked via the Thriller control group)
-        Pink Shaded Area: The accumulated Excess Churn caused directly by the launch
-    ![actual vs counterfactual](results/actual_vs_counterfactual.png)
+3. Actual vs. Counterfactual Churn Trajectory
+   
+    - Blue Line: Actual pre-launch baseline (~0.80%)
+    - Red Line: Actual post-launch churn rate for Horror viewers
+    - Dashed Grey Line: Estimated counterfactual trajectory (what Horror churn would have been without the competitor launch, tracked via the Thriller control group)
+    - Shaded Area: The accumulated Excess Churn caused directly by the launch
+      
+![actual vs counterfactual](results/actual_vs_counterfactual.png)
+
 
 ## Data Design Decisions
-    ### Population
 
 -   Total Primeflix subscriber base (implied): ~1,000,000
 -   Horror viewers (treated group, 70%+ horror watch share): 80,000
 -   Thriller viewers (control group, 70%+ thriller watch share): 100,000
--   Rationale: Horror and Thriller are treated as niche-concentration segments within a much larger, genre-mixed base — most subscribers don't concentrate 70%+ in a single genre. Thriller is sized larger than Horror to reflect its more mainstream appeal.
+-   Rationale: Horror and Thriller are treated as niche-concentration segments within a much larger, genre-mixed base — most subscribers don't concentrate 70%+ in a single genre. Thriller is sized larger than Horror to reflect its more mainstream appeal
 
 ### Baseline churn rate
 -   ~3–4% monthly churn, converted to weekly probability (Acquisition can be assumed to offset baseline churn at the topline business level)
