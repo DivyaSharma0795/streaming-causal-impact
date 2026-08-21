@@ -2,7 +2,7 @@
 
 A niche horror-only streaming competitor launches into the market. Primeflix wants to know: did this hurt us, and if so, who did it hurt?
 
-Customers are split by genre-viewing behavior — Horror viewers (70%+ of watch time in horror) are the treated group, and Thriller viewers (70%+ of watch time in thriller) are the control group. Thriller viewers were chosen as the control because they show similar pre-launch engagement patterns to horror viewers but aren't served by a horror-only competitor, making them a credible counterfactual. This project uses Difference-in-Differences to estimate the causal impact of the competitor's launch on horror-viewer churn.
+Customers are split by genre-viewing behavior - Horror viewers (70%+ of watch time in horror) are the treated group, and Thriller viewers (70%+ of watch time in thriller) are the control group. Thriller viewers were chosen as the control because they show similar pre-launch engagement patterns to horror viewers but aren't served by a horror-only competitor, making them a credible counterfactual. This project uses Difference-in-Differences to estimate the causal impact of the competitor's launch on horror-viewer churn.
 
 **Campaign Timeline**
 
@@ -77,7 +77,7 @@ Peak vs. Tail Hypothesis Test
 -   Total Primeflix subscriber base (implied): ~1,000,000
 -   Horror viewers (treated group, 70%+ horror watch share): 80,000
 -   Thriller viewers (control group, 70%+ thriller watch share): 100,000
--   Rationale: Horror and Thriller are treated as niche-concentration segments within a much larger, genre-mixed base — most subscribers don't concentrate 70%+ in a single genre. Thriller is sized larger than Horror to reflect its more mainstream appeal
+-   Rationale: Horror and Thriller are treated as niche-concentration segments within a much larger, genre-mixed base - most subscribers don't concentrate 70%+ in a single genre. Thriller is sized larger than Horror to reflect its more mainstream appeal
 
 ### Baseline churn rate
 -   ~3–4% monthly churn, converted to weekly probability (Acquisition can be assumed to offset baseline churn at the topline business level)
